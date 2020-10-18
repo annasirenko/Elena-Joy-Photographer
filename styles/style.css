@@ -577,3 +577,61 @@ nav {
   to {
     -webkit-transform: rotateZ(0deg);
     transform: rotateZ(0deg); } }
+
+#about {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.about_desc {
+  background: #414141;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 2;
+  -ms-flex: 2 1 40rem;
+  flex: 2 1 40rem;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .about_desc h2 {
+    padding: 2rem;
+    font-family: "Vibes"; }
+  .about_desc h3 {
+    padding: 2rem 0;
+    font-family: "Ruhl Medium"; }
+  .about_desc div {
+    padding: 3rem 8rem; }
+    @media screen and (max-width: 480px) {
+      .about_desc div {
+        padding: 3rem 3rem; } }
+
+.about_img {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+  position: relative; }
+  .about_img h5 {
+    position: absolute;
+    letter-spacing: 2rem;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -20%);
+    -ms-transform: translate(-50%, -20%);
+    transform: translate(-50%, -20%); }
+  .about_img img {
+    -o-object-fit: cover;
+    object-fit: cover; }

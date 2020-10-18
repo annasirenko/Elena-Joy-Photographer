@@ -1,0 +1,42 @@
+#about {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about {
+  &_desc {
+    background: $gray;
+    color: #fff;
+    @include flex;
+    flex: 2 1 40rem;
+    justify-content: space-around;
+    & h2 {
+      padding: 2rem;
+      font-family: "Vibes";
+    }
+    & h3 {
+      padding: 2rem 0;
+      font-family: "Ruhl Medium";
+    }
+    & div {
+      padding: 3rem 8rem;
+      @include phones {
+        padding: 3rem 3rem;
+      }
+    }
+  }
+  &_img {
+    flex: 1 1 40rem;
+    position: relative;
+    & h5 {
+      position: absolute;
+      letter-spacing: 2rem;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+    }
+    & img {
+      object-fit: cover;
+    }
+  }
+}
