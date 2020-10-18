@@ -38,3 +38,15 @@ $main: calc(2.4rem + 1vw);
   justify-content: center;
   align-items: center;
 }
+
+@mixin tablets {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
