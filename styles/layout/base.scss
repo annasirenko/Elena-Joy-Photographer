@@ -1,6 +1,14 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  @include laptop {
+    $header1: 3rem;
+    $header2: 4.5rem;
+    $header3: 3.5rem;
+    $header4: 2.5rem;
+    $text: 3rem;
+    $main: 6rem;
+  }
 }
 body,
 html {

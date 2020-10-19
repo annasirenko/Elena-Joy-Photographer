@@ -1,0 +1,123 @@
+.contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  //   text-align: center;
+  &_form-wrapper {
+    flex: 3 1 40rem;
+    @include flex;
+    & h2 {
+      margin-bottom: 3rem;
+    }
+
+    &-span {
+      font-size: $main;
+      color: $brown;
+    }
+  }
+  &_img {
+    flex: 1 1 40rem;
+    @include phones {
+      display: none;
+    }
+  }
+}
+
+// form {
+//   width: 50%;
+//   position: relative;
+//   height: 5rem;
+//   //   overflow: hidden;
+//   & input {
+//     width: 100%;
+//     height: 100%;
+//     color: $brown;
+//     margin-top: 3rem;
+//     padding-top: 2rem;
+//     border: none;
+//     outline: none;
+//   }
+//   & label {
+//     position: absolute;
+//     bottom: -3rem;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     pointer-events: none;
+//     border-bottom: 1px solid #000;
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       left: 0px;
+//       bottom: -0.1rem;
+//       height: 100%;
+//       width: 100%;
+//       border-bottom: 3px solid $brown;
+//       transform: translateX(-100%);
+//       transition: transform 0.3s ease;
+//     }
+//     & .content-name {
+//       position: absolute;
+//       bottom: 0.5rem;
+//       left: 0;
+//       transition: all 0.3s ease;
+//     }
+//   }
+
+//   & input:focus + .label-name .content-name {
+//     transform: translateY(-150%);
+//     font-size: $text;
+//     color: $brown;
+//   }
+//   & input:valid + .label-name .content-name {
+//     transform: translateY(-150%);
+//     font-size: $text;
+//     color: $brown;
+//   }
+//   & input:focus + .label-name::after,
+//   & input:valid + .label-name::after {
+//     transform: translateX(0%);
+//   }
+// }
+
+form {
+  & input {
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    &:focus ~ label,
+    &:valid ~ label {
+      top: -1.2rem;
+      left: 0;
+      color: $brown;
+      font-size: calc(1rem + 1vw);
+      font-weight: bold;
+    }
+  }
+  & .floating {
+    position: relative;
+    & label {
+      position: absolute;
+      top: 1.5rem;
+      left: 0;
+      color: #000;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+  }
+  & button {
+    padding: 2rem 8rem;
+    border: 3px solid $brown;
+    background-color: transparent;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus {
+      background-color: $brown;
+      color: #fff;
+    }
+  }
+}
