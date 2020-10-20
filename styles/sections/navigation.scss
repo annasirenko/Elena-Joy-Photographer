@@ -3,7 +3,7 @@
   z-index: 2;
   position: relative;
 }
-nav {
+.nav {
   @include container;
   display: flex;
   align-items: center;
@@ -31,11 +31,19 @@ nav {
       }
     }
   }
+  @include phones {
+    &-open {
+      transform: translateX(-100%);
+    }
+  }
 }
 #logo {
   flex: 1 1 20rem;
 }
 
+// .nav-open {
+//   transform: translateX(-100%);
+// }
 @include phones {
   .burger {
     position: relative;
@@ -48,5 +56,20 @@ nav {
       display: block;
       transition: all 0.3s ease;
     }
+  }
+}
+
+.toggle {
+  & .line-1 {
+    transform: rotateZ(45deg) translateY(300%);
+    background: #fff;
+  }
+  & .line-2 {
+    opacity: 0;
+  }
+
+  & .line-3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background: #fff;
   }
 }

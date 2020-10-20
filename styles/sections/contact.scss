@@ -90,11 +90,15 @@ form {
     border-bottom: 2px solid #000;
     &:focus ~ label,
     &:valid ~ label {
-      top: -1.2rem;
+      top: -2.2rem;
       left: 0;
       color: $brown;
       font-size: calc(1rem + 1vw);
       font-weight: bold;
+    }
+    &:focus,
+    &:valid {
+      border-bottom: 2px solid $brown;
     }
   }
   & .floating {
