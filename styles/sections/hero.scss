@@ -56,6 +56,13 @@
   animation: plant-entrance 1.5s ease-in-out 0.5s forwards,
     plant-shake 2.5s infinite ease alternate-reverse 2s;
   transform-origin: bottom;
+  @include laptop {
+    max-width: 90%;
+  }
+  @include tablets {
+    max-width: 65%;
+    // display: block;
+  }
   &2 {
     left: 40%;
   }

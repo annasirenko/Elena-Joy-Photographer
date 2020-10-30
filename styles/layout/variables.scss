@@ -22,7 +22,13 @@ $main: calc(6rem + 1vw);
 }
 
 @mixin laptop {
-  @media screen and (min-width: 1700px) {
+  @media screen and (max-width: 1700px) {
+    @content;
+  }
+}
+
+@mixin sm-laptop {
+  @media screen and (max-width: 1024px) {
     @content;
   }
 }

@@ -563,6 +563,12 @@ h5 {
   -webkit-transform-origin: bottom;
   -ms-transform-origin: bottom;
   transform-origin: bottom; }
+  @media screen and (max-width: 1700px) {
+    .plant {
+      max-width: 90%; } }
+  @media screen and (max-width: 768px) {
+    .plant {
+      max-width: 65%; } }
   .plant2 {
     left: 40%; }
 
@@ -732,6 +738,10 @@ h5 {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 40rem;
     flex: 1 1 40rem; }
+    @media screen and (max-width: 1024px) {
+      .contact_img img {
+        -o-object-fit: cover;
+        object-fit: cover; } }
     @media screen and (max-width: 480px) {
       .contact_img {
         display: none; } }
